@@ -42,6 +42,10 @@ func copyAction(cmd *cobra.Command, args []string) error {
 	if err != nil {
 		return err
 	}
+	
+	if err == nil {
+		// Empty branch?
+	}
 
 	arg0, err := exec.LookPath("scp")
 	if err != nil {
